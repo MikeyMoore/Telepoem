@@ -13,4 +13,6 @@ Post poems, short-stories, or sentences for your friends or strangers to collabo
 
 ##Stretch
 - Users can limit the amount of changes other users can make
+- Users can limit specific collaborators for their 'pieces'
+- Users can comment "proposed changes" on the cemented parts of other user's 'pieces'
 
