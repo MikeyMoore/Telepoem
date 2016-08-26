@@ -1,0 +1,11 @@
+<h1> This is the post#edit </h1>
+	<%= @post.title %>
+	by <%= User.find(@post.user_id).name %>
+	<br>
+	<br>
+
+<form>
+	<textarea rows="40" cols="50">
+		<%= @post.content %>
+	</textarea>
+</form>
