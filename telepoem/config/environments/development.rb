@@ -1,5 +1,7 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  GOOGLE_CLIENT_ID = ENV["GOOGLE_CLIENT_ID"]
+  SECRET = ENV["SECRET"]
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
@@ -11,6 +13,7 @@ Rails.application.configure do
 
   # Show full error reports.
   config.consider_all_requests_local = true
+
 
   # Enable/disable caching. By default caching is disabled.
   if Rails.root.join('tmp/caching-dev.txt').exist?
