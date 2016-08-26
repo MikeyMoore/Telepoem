@@ -2,19 +2,46 @@
 <html>
   <head>
     <title>TelePoem</title>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <!-- <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %> -->
+    <%= stylesheet_link_tag '/style.css' %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div>
-      <% if current_user %>
-        Signed in as <strong><%= current_user.name %></strong>!
-        <%= link_to "Sign out", signout_path, id: "sign_out" %>
-      <% else %>
-        <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
-      <% end %>
-    </div>
+    <nav class='navbar'>
+      <div>
+        <%= link_to "Home", root_path %>
+      </div>
+
+      <div>
+        <% if current_user %>
+          Signed in as <strong><%= current_user.name %></strong>!
+          <%= link_to "Sign out", signout_path, id: "sign_out" %>
+        <% else %>
+          <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
+        <% end %>
+      </div>
+
+      <div>
+        <p>Profile</p>
+      </div>
+
+      <br>
+
+      <div>
+        <p>Jokes</p>
+      </div>
+
+      <div>
+        <p>Poems</p>
+      </div>
+
+      <div>
+        <p>Short Stories</p>
+      </div>
+    </nav>
+
+
     <div>
     <%= yield %>
     </div>
