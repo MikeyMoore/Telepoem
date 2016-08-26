@@ -1,0 +1,11 @@
+<h1> This is the post#show </h1>
+	<%= @post.title %>
+	by <%= User.find(@post.user_id).name %>
+	<br>
+	<br>
+
+<div>
+	<p><%= @post.content %></p>
+</div>
+
+<%= link_to "edit", edit_posts_path(:id => @post.id) %>

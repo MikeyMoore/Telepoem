@@ -1,0 +1,6 @@
+<h1>This is the post#index</h1>
+
+<% @posts.each do |post| %>
+	<%= link_to post.title, posts_path(:id => post.id) %>
+	<br>
+<% end %>
