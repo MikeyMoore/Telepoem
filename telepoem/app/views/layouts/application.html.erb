@@ -15,8 +15,9 @@
 
       <div>
         <% if current_user %>
-          Signed in as <strong><%= current_user.name %></strong>!
-          <%= link_to "Sign out", signout_path, id: "sign_out" %>
+        <%= link_to "Sign out", signout_path, id: "sign_out" %>
+        <br>
+          Signed in as <strong><%= current_user.name %></strong>
         <% else %>
           <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
         <% end %>
@@ -33,15 +34,15 @@
       <br>
 
       <div>
-        <p>Jokes</p>
+        <%= link_to "Jokes", categories_path(:category_id => 2) %>
       </div>
 
       <div>
-        <p>Poems</p>
+        <%= link_to "Poems", categories_path(:category_id => 1) %>
       </div>
 
       <div>
-        <p>Short Stories</p>
+        <%= link_to "Short Stories", categories_path(:category_id => 3) %>
       </div>
     </nav>
 

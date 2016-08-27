@@ -4,8 +4,14 @@
 	<br>
 	<br>
 
-<form>
-	<textarea rows="40" cols="50">
-		<%= @post.content %>
-	</textarea>
-</form>
+<!-- 
+<textarea rows="40" cols="50">
+	<%= @post.content %>
+</textarea> -->
+
+<%= form_for @post, url: posts_path(@post), method: :patch do |f| %>
+	<%= f.text_area :content %>
+	<%= f.submit %>
+<% end %>
+
+
