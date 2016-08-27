@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'signout', to: 'sessions#destroy', as: 'signout'
 
   resources :sessions, only: [:create, :destroy]
-  resource :posts, :categories
+  resource :posts, :categories, :users
 
   root to: "posts#index"
 end

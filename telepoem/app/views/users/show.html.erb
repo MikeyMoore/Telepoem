@@ -1,0 +1,6 @@
+<h1>This is a profile page</h1>
+<p><%= @user.name %></p>
+<% @posts.each do |post| %>
+	<%= link_to post.title, posts_path(:id => post.id) %>
+	<br>
+<% end %>

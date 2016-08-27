@@ -1,6 +1,6 @@
 <h1> This is the post#show </h1>
 	<%= @post.title %>
-	by <%= User.find(@post.user_id).name %>
+	by <%= link_to User.find(@post.user_id).name, users_path(:user_id => @post.user_id) %>
 	<br>
 	<br>
 
