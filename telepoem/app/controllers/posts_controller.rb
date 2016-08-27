@@ -1,5 +1,13 @@
 class PostsController < ApplicationController
 	def index
+		# p "category id"
+		# p params[:category_id]
+
+		# if params[:category_id] != nil
+		# 	@category = Category.find(params[:category_id])
+		# 	p @category.name
+		# end
+
 		if Post.all != nil
 			@posts = Post.all
 		else
