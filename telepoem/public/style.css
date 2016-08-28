@@ -10,16 +10,17 @@
 	color:white;
 }
 
-.index-post-all {
-	text-align:center;
-}
-
-.index-post-single {
+.index-post-single, h1 {
 	border:solid black 1px;
 	border-radius:25px;
 	width:10em;
 	font-size:1.5em;
 	margin-left:40%;
+	text-align:center;
+}
+
+h1 {
+	border:none;
 }
 
 a:link, a:visited {
@@ -27,3 +28,17 @@ a:link, a:visited {
 	color:black;
 }
 
+@media (max-width: 550px) {
+	.index-post-single {
+		margin-left:50%;
+		font-size:1em;
+	}
+}
+
+@media (max-width: 450px) {
+	.index-post-single {
+		margin-left:60%;
+		font-size:1em;
+		width:5em;
+	}
+}
