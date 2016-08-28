@@ -2,4 +2,28 @@
 	background-color:teal;
 	float:left;
 	color: white;
+	border-radius:25px;
+	padding:1em;
 }
+
+.navbar a:visited, .navbar a:link {
+	color:white;
+}
+
+.index-post-all {
+	text-align:center;
+}
+
+.index-post-single {
+	border:solid black 1px;
+	border-radius:25px;
+	width:10em;
+	font-size:1.5em;
+	margin-left:40%;
+}
+
+a:link, a:visited {
+	text-decoration:none;
+	color:black;
+}
+
