@@ -1,5 +1,5 @@
 # Telepoem
-Post poems, short-stories, or sentences for your friends or strangers to collaborate on.
+Ruby on Rails web app where users can post poems, short-stories, or jokes for their friends and strangers to collaborate on.
 
 ##MVP
 - Users can register
@@ -16,3 +16,4 @@ Post poems, short-stories, or sentences for your friends or strangers to collabo
 - Users can limit specific collaborators for their 'pieces'
 - Users can comment "proposed changes" on the cemented parts of other user's 'pieces'
 
+Authors-- Sam Heinz & Mikey Moore
